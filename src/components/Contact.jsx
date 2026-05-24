@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Send, CheckCircle } from 'lucide-react'
 import { useI18n } from '../i18n/I18nContext.jsx'
+import API_BASE from '../apiBase.js'
 
 export default function Contact() {
   const { t } = useI18n()
@@ -41,7 +42,7 @@ export default function Contact() {
       message: form.message.value,
     }
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/contact`, {
+      const res = await fetch(`${API_BASE}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

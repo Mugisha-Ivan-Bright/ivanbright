@@ -2,6 +2,7 @@ import { useRef, useEffect, useState, useCallback } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useI18n } from '../i18n/I18nContext.jsx'
+import API_BASE from '../apiBase.js'
 
 const missions = [
   {
@@ -221,8 +222,7 @@ export default function MyTime() {
   const getNow = useCallback(() => Date.now() + timeOffsetRef.current, [])
 
   useEffect(() => {
-    const api = import.meta.env.VITE_API_URL || 'http://localhost:3001'
-    fetch(`${api}/api/time`)
+    fetch(`${API_BASE}/api/time`)
       .then(r => r.json())
       .then(data => {
         timeOffsetRef.current = data.timestamp - Date.now()
