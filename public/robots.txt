@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mugisha-ivan-bright.vercel.app/sitemap.xml
