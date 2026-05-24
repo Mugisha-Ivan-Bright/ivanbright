@@ -1,4 +1,4 @@
-import { Mail, Phone } from 'lucide-react'
+import { Mail, Phone, MessageSquare } from 'lucide-react'
 import { useI18n } from '../i18n/I18nContext.jsx'
 
 const columns = [
@@ -36,7 +36,7 @@ const columns = [
   },
 ]
 
-export default function Footer() {
+export default function Footer({ onOpenComment }) {
   const { t } = useI18n()
   return (
     <footer className="bg-[#0a0a0a] border-t border-[#1a1a1a]">
@@ -85,6 +85,9 @@ export default function Footer() {
             <a href="tel:+250735024932" className="text-[#555] transition-colors hover:text-accent">
               <Phone size={16} />
             </a>
+            <button onClick={onOpenComment} className="text-[#555] transition-colors hover:text-accent">
+              <MessageSquare size={16} />
+            </button>
           </div>
         </div>
 

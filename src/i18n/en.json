@@ -150,7 +150,51 @@
     "label": "06 · my time",
     "title": "MY TIME",
     "subtitle": "Not dreams. Scheduled realities. Every second is turning potential into capability.",
-    "closing": "The countdown is not to success. It is to who I become."
+    "closing": "The countdown is not to success. It is to who I become.",
+    "missions": [
+      {
+        "id": 1,
+        "title": "MIT / Stanford Admission",
+        "status": "preparing",
+        "reflection": "Preparing substance, not performance. Building proof before opportunity arrives."
+      },
+      {
+        "id": 2,
+        "title": "Speaking to MIT / Stanford Recruiters",
+        "status": "preparing",
+        "reflection": "Not waiting to become valuable. Becoming undeniable."
+      },
+      {
+        "id": 3,
+        "title": "Joining MIT / Stanford",
+        "status": "preparing",
+        "reflection": "The boy who imagined the sky is preparing to enter it."
+      },
+      {
+        "id": 4,
+        "title": "First Airplane Flight",
+        "status": "preparing",
+        "reflection": "Some people wait for the future. I am building mine second by second."
+      },
+      {
+        "id": 5,
+        "title": "First Engineering Hiring",
+        "status": "preparing",
+        "reflection": "Every passing second increases the distance between who I was and who I am becoming."
+      },
+      {
+        "id": 6,
+        "title": "Meeting a Sponsor",
+        "status": "preparing",
+        "reflection": "I do not know if it will succeed. But I know it is real."
+      },
+      {
+        "id": 7,
+        "title": "First $1M Generated",
+        "status": "preparing",
+        "reflection": "The countdown is not to success. It is to who I become."
+      }
+    ]
   },
   "skills": {
     "label": "07 · tools I work with",

@@ -80,7 +80,51 @@
     "label": "06 · igihe cyanjye",
     "title": "IGIHE CYANJYE",
     "subtitle": "Ntabwo ari inzozi. Ni ibintu byagenwe. Buri segonda ihindura ubushobozi mu bikorwa.",
-    "closing": "Kubara igihe ntabwo ari ukugera ku ntsinzi. Ni ukubera uwo nzaba."
+    "closing": "Kubara igihe ntabwo ari ukugera ku ntsinzi. Ni ukubera uwo nzaba.",
+    "missions": [
+      {
+        "id": 1,
+        "title": "Kwinjira muri MIT / Stanford",
+        "status": "nditegura",
+        "reflection": "Nitegura ibintu nyabyo, ntabwo ari imyitwarire. Nubaka ibimenyetso mbere y'uko amahirwe agera."
+      },
+      {
+        "id": 2,
+        "title": "Kuvugana n'abashakashatsi ba MIT / Stanford",
+        "status": "nditegura",
+        "reflection": "Ntabwo ndindiriza kuba indanga. Ntumbera kuba umuntu udashidikanywaho."
+      },
+      {
+        "id": 3,
+        "title": "Kujya muri MIT / Stanford",
+        "status": "nditegura",
+        "reflection": "Umuhungu watekerezaga ikirere aritegura kukinjjiramo."
+      },
+      {
+        "id": 4,
+        "title": "Indege ya mbere",
+        "status": "nditegura",
+        "reflection": "Bamwe barindira ejo hazaza. Njye ndubaka iwanjye segonda ku yindi."
+      },
+      {
+        "id": 5,
+        "title": "Akazi ka mbere k'ubuhanga",
+        "status": "nditegura",
+        "reflection": "Buri segonda irenga yongera intera hagati y'uko nari n'uko nzaba."
+      },
+      {
+        "id": 6,
+        "title": "Guhura n'umuterankunga",
+        "status": "nditegura",
+        "reflection": "Ntabwo nzi niba bizatsinda. Ariko nzi ko ari ukuri."
+      },
+      {
+        "id": 7,
+        "title": "Kuvoma 1M$ ya mbere",
+        "status": "nditegura",
+        "reflection": "Kubara igihe ntabwo ari ukugera ku ntsinzi. Ni ukubera uwo nzaba."
+      }
+    ]
   },
   "skills": {
     "label": "07 · ibikoresho nkoresha",

@@ -21,6 +21,8 @@ import Becoming from './components/Becoming.jsx'
 import Beliefs from './components/Beliefs.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import FeedbackOverlay from './components/FeedbackOverlay.jsx'
+import CommentModal from './components/CommentModal.jsx'
 
 function GrainOverlay() {
   return (
@@ -62,6 +64,7 @@ function LoadingScreen({ onComplete }) {
 
 export default function App() {
   const [loaded, setLoaded] = useState(false)
+  const [commentOpen, setCommentOpen] = useState(false)
   const { dotRef, ringRef } = useCursor()
   useScrollTrigger()
 
@@ -134,8 +137,11 @@ export default function App() {
           <Becoming />
           <Beliefs />
           <Contact />
-          <Footer />
+          <Footer onOpenComment={() => setCommentOpen(true)} />
         </div>
+
+        <FeedbackOverlay onOpenComment={() => setCommentOpen(true)} />
+        <CommentModal open={commentOpen} onClose={() => setCommentOpen(false)} />
       </I18nProvider>
     </>
   )

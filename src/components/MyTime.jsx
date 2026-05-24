@@ -4,71 +4,15 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import API_BASE from '../apiBase.js'
 
-const missions = [
-  {
-    id: 1,
-    title: 'MIT / Stanford Admission',
-    target: new Date('2027-04-01T00:00:00'),
-    status: 'preparing',
-    focus: 0.35,
-    reflection: 'Preparing substance, not performance. Building proof before opportunity arrives.',
-    connectsTo: [2, 3],
-  },
-  {
-    id: 2,
-    title: 'Speaking to MIT / Stanford Recruiters',
-    target: new Date('2026-11-01T00:00:00'),
-    status: 'preparing',
-    focus: 0.50,
-    reflection: 'Not waiting to become valuable. Becoming undeniable.',
-    connectsTo: [1, 3],
-  },
-  {
-    id: 3,
-    title: 'Joining MIT / Stanford',
-    target: new Date('2027-09-01T00:00:00'),
-    status: 'preparing',
-    focus: 0.20,
-    reflection: 'The boy who imagined the sky is preparing to enter it.',
-    connectsTo: [1, 2],
-  },
-  {
-    id: 4,
-    title: 'First Airplane Flight',
-    target: new Date('2026-12-25T00:00:00'),
-    status: 'preparing',
-    focus: 0.60,
-    reflection: 'Some people wait for the future. I am building mine second by second.',
-    connectsTo: [5, 6],
-  },
-  {
-    id: 5,
-    title: 'First Engineering Hiring',
-    target: new Date('2026-08-01T00:00:00'),
-    status: 'preparing',
-    focus: 0.75,
-    reflection: 'Every passing second increases the distance between who I was and who I am becoming.',
-    connectsTo: [4, 6],
-  },
-  {
-    id: 6,
-    title: 'Meeting a Sponsor',
-    target: new Date('2026-11-15T00:00:00'),
-    status: 'preparing',
-    focus: 0.40,
-    reflection: 'I do not know if it will succeed. But I know it is real.',
-    connectsTo: [4, 5, 7],
-  },
-  {
-    id: 7,
-    title: 'First $1M Generated',
-    target: new Date('2032-01-01T00:00:00'),
-    status: 'preparing',
-    focus: 0.10,
-    reflection: 'The countdown is not to success. It is to who I become.',
-    connectsTo: [6],
-  },
-]
+const missionMeta = {
+  1: { target: new Date('2027-04-01T00:00:00'), focus: 0.35, connectsTo: [2, 3] },
+  2: { target: new Date('2026-11-01T00:00:00'), focus: 0.50, connectsTo: [1, 3] },
+  3: { target: new Date('2027-09-01T00:00:00'), focus: 0.20, connectsTo: [1, 2] },
+  4: { target: new Date('2026-12-25T00:00:00'), focus: 0.60, connectsTo: [5, 6] },
+  5: { target: new Date('2026-08-01T00:00:00'), focus: 0.75, connectsTo: [4, 6] },
+  6: { target: new Date('2026-11-15T00:00:00'), focus: 0.40, connectsTo: [4, 5, 7] },
+  7: { target: new Date('2032-01-01T00:00:00'), focus: 0.10, connectsTo: [6] },
+}
 
 function calcTimeLeft(target, now) {
   const diff = target.getTime() - now
@@ -207,6 +151,10 @@ function MissionCard({ mission, onHover, hovered, getNow }) {
 
 export default function MyTime() {
   const { t } = useI18n()
+  const missions = (t?.mytime?.missions || []).map(m => ({
+    ...m,
+    ...(missionMeta[m.id] || {}),
+  }))
   const sectionRef = useRef(null)
   const titleRef = useRef(null)
   const subtitleRef = useRef(null)

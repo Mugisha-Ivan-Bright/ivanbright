@@ -80,7 +80,51 @@
     "label": "06 · mon temps",
     "title": "MON TEMPS",
     "subtitle": "Pas des rêves. Des réalités planifiées. Chaque seconde transforme le potentiel en capacité.",
-    "closing": "Le compte à rebours n'est pas vers le succès. Il est vers qui je deviens."
+    "closing": "Le compte à rebours n'est pas vers le succès. Il est vers qui je deviens.",
+    "missions": [
+      {
+        "id": 1,
+        "title": "Admission MIT / Stanford",
+        "status": "en préparation",
+        "reflection": "Je prépare le fond, pas la performance. Je construis la preuve avant que l'opportunité n'arrive."
+      },
+      {
+        "id": 2,
+        "title": "Parler aux recruteurs de MIT / Stanford",
+        "status": "en préparation",
+        "reflection": "Je n'attends pas de devenir précieux. Je deviens incontestable."
+      },
+      {
+        "id": 3,
+        "title": "Rejoindre MIT / Stanford",
+        "status": "en préparation",
+        "reflection": "Le garçon qui imaginait le ciel se prépare à y entrer."
+      },
+      {
+        "id": 4,
+        "title": "Premier vol en avion",
+        "status": "en préparation",
+        "reflection": "Certains attendent le futur. Je construis le mien seconde par seconde."
+      },
+      {
+        "id": 5,
+        "title": "Premier emploi en ingénierie",
+        "status": "en préparation",
+        "reflection": "Chaque seconde qui passe augmente la distance entre qui j'étais et qui je deviens."
+      },
+      {
+        "id": 6,
+        "title": "Rencontrer un sponsor",
+        "status": "en préparation",
+        "reflection": "Je ne sais pas si ça réussira. Mais je sais que c'est réel."
+      },
+      {
+        "id": 7,
+        "title": "Premier 1M$ généré",
+        "status": "en préparation",
+        "reflection": "Le compte à rebours n'est pas vers le succès. Il est vers qui je deviens."
+      }
+    ]
   },
   "skills": {
     "label": "07 · les outils avec lesquels je travaille",
