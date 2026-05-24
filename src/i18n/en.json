@@ -1,0 +1,283 @@
+{
+  "nav": {
+    "logo": "MIB",
+    "story": "Story",
+    "projects": "Projects",
+    "skills": "Skills",
+    "whyIBuild": "Why I Build",
+    "contact": "Contact",
+    "openToWork": "Open to work",
+    "hireMe": "Hire me →"
+  },
+  "hero": {
+    "badge": "v2025.2 · Rwanda Coding Academy · Year 2",
+    "headline1": "I Build.",
+    "headline2": "I Lead.",
+    "headline3": "I Believe.",
+    "subheadline": "A software engineer from Rwanda who prayed his way into coding, found his voice in Year 2, and now builds things that matter.",
+    "ctaStory": "Read my story →",
+    "ctaWork": "See my work →",
+    "tickerItems": ["◆ Building Uptime SaaS", "◆ Full-Stack Engineer", "◆ RCA Year 2", "◆ Community Leader", "◆ MediSafe Builder", "◆ Academix Architect", "◆ Faith-Driven", "◆ MIT/Stanford Dreamer", "◆ TypeScript", "◆ Python", "◆ Microservices", "◆ Open to Part-Time", "◆ Rwanda 🇷🇼"]
+  },
+  "story": {
+    "label": "02 · the human behind the code",
+    "title": "I didn't arrive here.",
+    "titleAccent": "I fought here.",
+    "milestones": [
+      { "year": "2022", "title": "The Prayer", "body": "I saw one student from my school get into Rwanda Coding Academy. I made it my mission. I prayed for it every single day. Every time I had internet, I went back to the RCA website just to learn more about it. That was the level of my hunger." },
+      { "year": "2024", "title": "The Admission", "body": "My father is a carpenter. My mother is a farmer. We are five children and I am the second born. I had never owned a PC. My English was nearly zero. I was terrified I wasn't good enough. Then the admission came. It felt like a miracle. Because it was.", "pill": "Top 80 admitted · O-Level · English, Math, Physics" },
+      { "year": "2024–2025", "title": "Year 1 · The Quiet One", "body": "Everyone said: this man does not talk. My voice was barely audible in a room. I felt like the odd man out. I wondered if I belonged. But I kept going. Quietly." },
+      { "year": "2025–2026", "title": "Year 2 · The Breakthrough", "body": "Everything changed in Year 2. Better grades. I started speaking. My confidence grew. I stopped looking down on myself. I started collaborating. I started leading.", "pill": "Head of Community Outreach · RCA · 2026" },
+      { "year": "Now", "title": "Building for Others", "body": "I build real systems. I lead a real community. I care about the people around RCA, not just the code inside it. I do this whether people are watching or not." },
+      { "year": "Future", "title": "The Dream", "body": "MIT or Stanford. I've said it out loud to people who laughed. I still mean it. Faith is what got me here. Faith is what will take me further.", "pill": "Target: MIT / Stanford · 2027+" }
+    ]
+  },
+  "engineering": {
+    "label": "04 · how I think about systems",
+    "title": "Not just what I built.",
+    "titleAccent": "How I thought about it.",
+    "cards": [
+      { "title": "Academix: Why Microservices?", "body": "I chose microservices for Academix not because tutorials said to, but because the domain genuinely had independent bounded contexts — students, records, and administration each change at different rates. What I didn't expect was how quickly distributed systems would introduce real complexity: authentication across services, shared data boundaries, and debugging across processes became engineering problems, not tutorial problems. That's when I understood the difference between reading about distributed systems and actually building one." },
+      { "title": "MediSafe: AI in a High-Stakes Domain", "body": "Building MediSafe forced me to think differently. When software is wrong in most domains, you lose data. When medication software is wrong, someone could be harmed. That responsibility shaped every decision: how I handled user input, how I validated drug interactions, how I designed the NLP prompts to stay within safe boundaries. Building for healthcare taught me that engineering is ethics." }
+    ],
+    "terminalPrompt": "$ what I learned building real systems",
+    "terminalLines": [
+      "> monoliths are underrated until you need to scale",
+      "> distributed debugging is 10x harder than distributed design",
+      "> the best architecture is the one your team can reason about",
+      "> premature optimization is real, I've done it, it cost me time",
+      "> documentation is not optional, it is the system"
+    ]
+  },
+  "growth": {
+    "label": "03 · growth",
+    "title": "How I got here.",
+    "subtitle": "Not a contribution chart. A journal. Every node is a real moment — something built, something broken, something understood."
+  },
+  "projects": {
+    "label": "05 · things I built",
+    "title": "Real problems.",
+    "titleAccent": "Real systems. Real code.",
+    "primary": [
+      {
+        "name": "Uptime",
+        "tagline": "Website monitoring that actually works. Multi-region. Multi-tenant. Fully monetized.",
+        "desc": "I am building a monitoring platform from scratch.\n\nThe idea is simple: your website goes down at 3am, your team knows within seconds — not when a customer complains.\n\nThe hard part is not the monitoring itself. The hard part is not raising false alarms. If one region sees a failure but three others don't, that is not an outage. That is a network hiccup. Multi-region consensus is what separates real monitoring from noise.\n\nEvery company on the platform gets a public status page — the kind Stripe and GitHub have. Except I built mine from scratch, at Rwanda Coding Academy, in Year 2.\n\nIt has subscription billing. It is multi-tenant. It is the most serious thing I have ever built. I do not know if it will succeed. But I know it is real.",
+        "tech": ["TypeScript", "Node.js", "PostgreSQL", "React", "Vercel"],
+        "arch": "→ monitoring workers   poll endpoints every 30–60s\n→ multi-region nodes   consensus required for outage\n→ alert dispatcher     Slack · Email · PagerDuty\n→ status page engine   public · live · 90-day history\n→ billing layer        subscription plans · multi-tenant\n→ tenant isolation     each company fully separated",
+        "category": "SaaS · monitoring · infrastructure",
+        "status": "in progress",
+        "closingUptime": "This is not finished. But it is the most real thing I have ever built. I am a Year 2 student at Rwanda Coding Academy. I started this because I needed it to exist. That is usually a good enough reason."
+      },
+      { "name": "MediSafe", "tagline": "Helping patients manage medications safely with AI.", "desc": "Built for people living with chronic illness who struggle to track prescriptions and side effects every day. Healthcare software should feel like care, not complexity.", "tech": ["TypeScript", "AI/NLP", "React"], "arch": "AI-powered · medication validation · natural language input", "evolution": "MediSafe v1 → current: how it started, how it's going" },
+      { "name": "Academix", "tagline": "A full microservices school management system.", "desc": "Designed to bring efficiency to academic institutions. Students, records, workflows — all connected. Built to actually work at scale, not just in demos.", "tech": ["TypeScript", "Microservices", "REST APIs"], "arch": "Distributed services · bounded contexts · event-driven" },
+      { "name": "furnit", "tagline": "A furniture web experience built with care.", "desc": "A frontend project where I focused purely on UI craft — clean design, smooth interactions, product feel.", "tech": ["JavaScript", "CSS", "React"] }
+    ],
+    "secondary": [
+      {
+        "name": "Automailio",
+        "desc": "An email automation platform — campaigns, templates, scheduling, delivery logs. Built with Java Spring Boot on the backend and React on the frontend. Containerized with Docker. This one taught me that building for reliability is a completely different challenge than building for functionality.",
+        "tech": ["Java", "Spring Boot", "TypeScript", "PostgreSQL", "Docker"],
+        "category": "automation · full-stack",
+        "status": "in progress",
+        "github": "https://github.com/Mugisha-Ivan-Bright/automailio"
+      },
+      {
+        "name": "Enrollia",
+        "desc": "An enrollment management dashboard built with Refine and Supabase. Handles data, access control, and admin workflows. The SQL schema is the part I'm most proud of — getting the data model right before writing a single line of React.",
+        "tech": ["TypeScript", "React", "Supabase", "PostgreSQL", "SQL"],
+        "category": "dashboard · admin panel",
+        "status": "shipped",
+        "github": "https://github.com/Mugisha-Ivan-Bright/enrollia",
+        "live": "https://enrollia.vercel.app"
+      },
+      {
+        "name": "RFID System",
+        "desc": "An RFID-based web system — hardware meets software. I built the web layer that connects to physical RFID readers. This came from a real problem we worked on at school. It's not perfect, but it's real, and it works. I also wrote C++ for Bluetooth communication and servo control — because I was curious, and curiosity doesn't wait for a syllabus.",
+        "tech": ["HTML", "CSS", "JavaScript", "C++", "Embedded Systems"],
+        "category": "hardware + software",
+        "status": "shipped",
+        "github": "https://github.com/Mugisha-Ivan-Bright/RFID",
+        "live": "https://rfidembedded.vercel.app"
+      },
+      {
+        "name": "MARKET-TRUTH",
+        "desc": "A market information tool built in TypeScript. Someone forked it. That was the first time I realized something I built was useful to a stranger. It was a small moment, but it meant something.",
+        "tech": ["TypeScript", "React", "Vercel"],
+        "category": "data · market",
+        "status": "shipped",
+        "github": "https://github.com/Mugisha-Ivan-Bright/MARKET-TRUTH",
+        "live": "https://market-truth.vercel.app"
+      },
+      {
+        "name": "Lumen",
+        "desc": "Lumen — a full-stack TypeScript product with a separate frontend and backend. This is the most starred project on this account. I don't know exactly why people liked it, but I know I built it carefully. Both repos. Both mine.",
+        "tech": ["TypeScript", "Node.js", "React", "Vercel"],
+        "category": "full-stack",
+        "status": "shipped",
+        "github": "https://github.com/Mugisha-Ivan-Bright/lumen-frontend",
+        "live": "https://lumen-frontend-gamma.vercel.app"
+      },
+      {
+        "name": "Igihango Digital",
+        "desc": "Igihango — a digital contract/agreement platform. 'Igihango' is Kinyarwanda for covenant or agreement. I built this for a Rwandan context because I believe software should solve problems where people actually are. JavaScript frontend, Python backend. Two repos, one idea.",
+        "tech": ["JavaScript", "Python", "REST API"],
+        "category": "civic · Rwanda-first",
+        "status": "shipped",
+        "github": "https://github.com/Mugisha-Ivan-Bright/igihango-digital"
+      },
+      {
+        "name": "Adheronix Demo",
+        "desc": "Adheronix — a product demo built in TypeScript and deployed live. I built this to present something real. It is one of the larger things I've shipped. Not everything I build is for myself.",
+        "tech": ["TypeScript", "React", "Vercel"],
+        "category": "product demo",
+        "status": "shipped",
+        "github": "https://github.com/Mugisha-Ivan-Bright/adheronix-demo-presentation",
+        "live": "https://adheronix-demo-presentation.vercel.app"
+      },
+      {
+        "name": "AI Resume Analyzer",
+        "desc": "An AI tool that reads and analyzes resumes. I built this recently. It's not finished. But I believe in shipping things before they're perfect and learning from what breaks.",
+        "tech": ["JavaScript", "AI", "OpenAI API"],
+        "category": "AI tools",
+        "status": "in progress",
+        "github": "https://github.com/Mugisha-Ivan-Bright/ai-resume-analyzer"
+      }
+    ],
+    "closingNote": "These are some of what I've built.\nThere are 41 repositories across two GitHub accounts.\nSome are unfinished. Some are experiments.\nSome are things I'm not ready to talk about yet.\nBut every single one taught me something.\nThat's why I keep building."
+  },
+  "mytime": {
+    "label": "06 · my time",
+    "title": "MY TIME",
+    "subtitle": "Not dreams. Scheduled realities. Every second is turning potential into capability.",
+    "closing": "The countdown is not to success. It is to who I become."
+  },
+  "skills": {
+    "label": "07 · tools I work with",
+    "categories": [
+      { "name": "Languages", "items": "TypeScript · JavaScript · Python · Java · C++" },
+      { "name": "Frontend", "items": "React · Next.js · Vite · Tailwind CSS" },
+      { "name": "Backend", "items": "Node.js · NestJS · Fastify · Spring Boot · REST APIs · Microservices · Docker · CI/CD" },
+      { "name": "AI/ML", "items": "NLP integration · AI-powered product design" },
+      { "name": "Architecture", "items": "Distributed systems · Service boundaries · API design" },
+      { "name": "Tools", "items": "Git · GitHub · Vercel · VS Code · OpenCode" },
+      { "name": "Networking", "items": "TCP/IP · DNS · HTTP/HTTPS · Routing & switching · Subnetting · Router security · Firewalls · VLANs · Network troubleshooting" },
+      { "name": "Human skills", "items": "Community leadership · Public speaking (earned, not gifted) · Faith & resilience · Honesty · Working without recognition" }
+    ]
+  },
+  "community": {
+    "label": "08 · beyond the code",
+    "title": "A developer who only writes code",
+    "titleAccent": "is only half a developer.",
+    "role": "Head of Community Outreach",
+    "school": "Rwanda Coding Academy",
+    "description": "I believe RCA has a responsibility to the community around it, not just the students inside it. I organize outreach. I connect. I fight for people near us. I don't do this for recognition. I do it because it matters.",
+    "quoteLine1": "$ mugisha --beliefs",
+    "quoteLine2": "> \"Ibyo ntekereje mbikora abantu bandeba cyangwa batandeba.\"",
+    "quoteLine3": "(What I do, I do whether people are watching or not.)",
+    "tag": "Not for the CV. For real."
+  },
+  "whyIBuild": {
+    "label": "09 · the reason",
+    "title": "Why I Build",
+    "line1": "Because I know what it feels like to grow up without access.",
+    "line2": "Because I know what it feels like to sit in a room and doubt whether you belong there.",
+    "line3": "Because I watched technology completely redirect my life — from a quiet kid in Gatsibo who had never touched a PC, to someone building AI-powered systems and leading a community.",
+    "line4": "That already happened to me.",
+    "line5": "Now I want to build things that help it happen to someone else."
+  },
+  "failures": {
+    "label": "10 · things that changed me",
+    "title": "Failures are data.",
+    "titleAccent": "Here is mine.",
+    "cards": [
+      { "label": "lesson 01", "title": "The first time tutorials weren't enough.", "body": "I thought I understood Node.js because I could follow along. Then I tried to build something real and nothing worked the way the tutorial promised. That was the day I understood: knowing how to copy is not the same as knowing how to build." },
+      { "label": "lesson 02", "title": "The project I had to restart from scratch.", "body": "I built a backend that worked on my machine and nowhere else. Wrong assumptions, wrong architecture, wrong approach. Restarting is painful. But it teaches you faster than anything else. I am not afraid of starting over anymore." },
+      { "label": "lesson 03", "title": "The moment I understood confidence is built, not given.", "body": "I did not always believe I belonged in rooms like this. I was quiet because I was afraid. Not because I had nothing to say. Year 2 taught me: confidence is not a personality trait. It is a practice. I practice it every day." }
+    ]
+  },
+  "obsession": {
+    "label": "11 · what I'm chasing right now",
+    "exploringPrompt": "$ exploring --active",
+    "exploringItems": ["→ multi-region distributed monitoring", "→ SaaS billing architecture (Stripe)", "→ tenant isolation at scale", "→ public status page infrastructure", "→ AI-assisted healthcare tools", "→ low-level systems (learning C)", "→ how technology reduces inequality"],
+    "thoughtsPrompt": "$ thoughts --2am",
+    "thoughtsItems": ["> why do most systems fail at scale?", "> what makes software truly useful?", "> can technology reduce inequality in Rwanda?", "> how far can discipline take a person?", "> what kind of engineer do I want to become?", "> does the world need more builders or more thinkers?"]
+  },
+  "becoming": {
+    "label": "12 · trajectory",
+    "title": "The engineer",
+    "titleAccent": "I'm becoming.",
+    "statusLabels": {
+      "shipped": "Shipped",
+      "in progress": "In Progress",
+      "dreaming": "Dreaming"
+    },
+    "paragraphs": [
+      "I am not trying to become a job description.",
+      "I want to build systems that matter in healthcare and education — the two domains where software can most directly change lives.",
+      "I want to understand infrastructure deeply enough to build things that scale beyond my own imagination.",
+      "I want to eventually do research — at MIT or Stanford — on how distributed systems and AI can work together in low-resource, high-need environments like the ones I grew up in."
+    ],
+    "closing": "I am a community-driven technologist. That is the engineer I am becoming.",
+    "phases": [
+      { "label": "Phase 1 · Now", "desc": "RCA Year 2 · Shipping real systems", "status": "shipped" },
+      { "label": "Phase 2 · 2026", "desc": "Part-time engineering work", "status": "in progress" },
+      { "label": "Phase 3 · 2027", "desc": "University application (MIT / Stanford)", "status": "dreaming" },
+      { "label": "Phase 4 · Beyond", "desc": "Research + build for Africa", "status": "dreaming" }
+    ]
+  },
+  "beliefs": {
+    "label": "13 · values",
+    "title": "What I Believe",
+    "cards": [
+      { "title": "Faith", "body": "Jesus Christ is the foundation of everything I've built and everything I am. Not performance. Not branding. Reality." },
+      { "title": "Honesty", "body": "This portfolio only contains things I have actually done. I would rather show you less and mean it, than show you more and fake it." },
+      { "title": "Hard work", "body": "I came from nothing on paper: no PC, no English, no connections. What I had was effort and prayer. It was enough to get me here. It will be enough to take me further." },
+      { "title": "People", "body": "Code is a tool. The goal is always people. I build software the way I lead community: not for the recognition, but for the impact." }
+    ]
+  },
+  "contact": {
+    "label": "14 · let's connect",
+    "title": "If you're building something meaningful, difficult, or human-centered — I would genuinely love to hear about it.",
+    "terminalHeading": "$ mugisha --contact",
+    "fieldLabels": {
+      "email": "email",
+      "phone": "phone",
+      "location": "location",
+      "github": "github",
+      "school": "school",
+      "openTo": "open to"
+    },
+    "alertMessage": "Something went wrong. Please email me directly at mugishaivanbright250@gmail.com",
+    "sponsorText": "I am also looking for a sponsor who believes in where I'm going. If you've read this far and feel something — reach out. I will not waste your investment.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Your message",
+    "send": "Send →",
+    "sending": "Sending...",
+    "sent": "Sent ✓"
+  },
+  "footer": {
+    "copyright": "MIB · Mugisha Ivan Bright · © 2026",
+    "builtWith": "Built with faith, code, and too many prayers to count.",
+    "location": "Rwanda Coding Academy · Gatsibo · Eastern Province · Rwanda 🇷🇼",
+    "navigate": "Navigate",
+    "more": "More",
+    "code": "Code",
+    "reach": "Reach",
+    "links": {
+      "story": "Story",
+      "projects": "Projects",
+      "skills": "Skills",
+      "community": "Community",
+      "whyIBuild": "Why I Build",
+      "beliefs": "Beliefs",
+      "contact": "Contact",
+      "hireMe": "Hire Me",
+      "github1": "GitHub @Mugisha-Ivan-Bright",
+      "github2": "GitHub @codewithmugisha",
+      "email": "mugishaivanbright250@gmail.com",
+      "phone": "+250 735 024 932"
+    }
+  }
+}

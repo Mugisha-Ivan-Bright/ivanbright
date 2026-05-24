@@ -1,0 +1,206 @@
+{
+  "nav": { "logo": "MIB", "story": "Inkuru", "projects": "Imirimo", "skills": "Ubuhanga", "whyIBuild": "Impamvu Nubaka", "contact": "Twandikire", "openToWork": "Ndifite akazi", "hireMe": "Ndakore →" },
+  "hero": {
+    "badge": "v2025.2 · Rwanda Coding Academy · Umwaka wa 2",
+    "headline1": "Nubaka.",
+    "headline2": "Ndarangwa.",
+    "headline3": "Ndemera.",
+    "subheadline": "Umuhanga wa software ukomoka mu Rwanda wasenze ngo abashe kwinjira mu bushakuzi, yabonye ijwi rye mu mwaka wa 2, noneho ubaka ibintu bifite agaciro.",
+    "ctaStory": "Soma inkuru yanjye →",
+    "ctaWork": "Reba imirimo yanjye →",
+    "tickerItems": ["◆ Kubaka Uptime SaaS", "◆ Full-Stack Engineer", "◆ RCA Umwaka wa 2", "◆ Umuyobozi w'Abantu", "◆ Umubaki wa MediSafe", "◆ Umugambi wa Academix", "◆ Nshingiye ku Kwizera", "◆ Nrose MIT/Stanford", "◆ TypeScript", "◆ Python", "◆ Microservices", "◆ Ndifite Ubufatanye", "◆ Rwanda 🇷🇼"]
+  },
+  "story": {
+    "label": "02 · umuntu uri inyuma ya code",
+    "title": "Sinageze hano nkabona gusa.",
+    "titleAccent": "Narwanije kugera hano.",
+    "milestones": [
+      { "year": "2022", "title": "Isengesho", "body": "Nabonye umunyeshuri umwe ku ishuri ryanjye yinjira mu Rwanda Coding Academy. Nabigize inshingano yanjye. Nasenze ibyo buri munsi. Igihe cyose nifashaga interineti, nasubukaga ku rubuga rwa RCA ngo ndebe byinshi kuri iyo shuri. Uko ni ko nari nshaka." },
+      { "year": "2024", "title": "Kwakirwa", "body": "Data ni umubaji. Mama n'umuhinzi. Turi abana batanu kandi ndi uwa kabiri. Ntarigeze ngira PC. Icyongereza cyanjye cyari hafi ubusa. Nari nkekaje cyane niba mbere ndashoboye. Hanyuma icyemuzo cyaje. Cyumvise nk'igitangaza. Kuko cyari cyo.", "pill": "Abahawe 80 ba mbere · O-Level · Icyongereza, Imibare, Fizika" },
+      { "year": "2024–2025", "title": "Umwaka wa 1 · Uceceye", "body": "Bose bavugaga: uyu mugabo ntavuga. Ijwi ryanjye ntiryumvaga neza mu cyumba. Numvaga nk'umuntu utari mu mwanya we. Nabajije niba mbere ndi mu mwanya wanjye. Ariko nakomeje. Nceceye." },
+      { "year": "2025–2026", "title": "Umwaka wa 2 · Ihinduka", "body": "Byose byahindutse mu mwaka wa 2. Amanota meza. Natangiye kuvuga. Icyizere cyanjye cyarushijeho. Naretse kwigunga. Natangiye gukorana n'abandi. Natangiye kuyobora.", "pill": "Ubuyobozi bw'Ishyanga · RCA · 2026" },
+      { "year": "Ubu", "title": "Kubakira Abandi", "body": "Nubaka sisitemu nyayo. Ndarangwa umuryango nyayo. Nita ku bantu bari hafi ya RCA, atari code gusa. Mbere abantu bareba cyangwa batareba, ndabikora." },
+      { "year": "Ejo Hazaza", "title": "Inzozi", "body": "MIT cyangwa Stanford. Nabyivugiye k'uruhonde abantu baseka. Nkaba ndabivuze. Ukwizera ni ko kwanzaniye hano. Ukwizera ni ko kuzajya impagana.", "pill": "Intego: MIT / Stanford · 2027+" }
+    ]
+  },
+  "engineering": {
+    "label": "04 · uko ntekereza kuri sisitemu",
+    "title": "Atari ibyo nubaka gusa.",
+    "titleAccent": "Uko nabitekerejeho.",
+    "cards": [
+      { "title": "Academix: Kuki Microservices?", "body": "Nahisemo microservices kuri Academix atari uko inyigisho zibivuga, ahubwo kubera ko urwego rwafitega imitwe yigenga — abanyeshuri, inyandiko, n'ubuyobozi bihinduka ku buryo butandukanye. Icyo ntarigeze nteganya ni ukuri ubwinshi bw'ingorane zishya: kwemeza umwironderi hagati ya serivisi, imipaka y'ibyatanzwe, no gusana porogaramu hagati y'ibice byatwaye ubuhanga nyabwo." },
+      { "title": "MediSafe: AI mu Nzego Zikomeye", "body": "Kubaka MediSafe byantumye ntekereza mu buryo butandukanye. Iyo porogaramu yibeshye mu nzego nyinshi, utakaza amakuru. Iyo porogaramu y'ubuvuzi yibeshye, umuntu ashobora gukomeretswa. Ubwo bushoboza bwafashe buri cyemezo: uko nakijije ibyo ukoresha yinjije, uko nasuzumye imikoranire y'imirere, uko nateguye NLP kugira ngo igume mu nzira ziziguye." }
+    ],
+    "terminalPrompt": "$ ibyo nize kubaka sisitemu nyayo",
+    "terminalLines": [
+      "> monoliths ntabwo zihagaze neza kugeza ugiye kongera ubushobozi",
+      "> gusana porogaramu zikoreshwa mu buryo butandukanye birakomeye kuruta gushushanya",
+      "> ububiko bwiza ni uko itsinda ryawe ribasha gusobanukirwa",
+      "> gukora optimisation mbere y'igihe ni ukuri, narabikoze, byantwaye igihe",
+      "> inyandiko ntabwo ari amahitamo, ni sisitemu ubwayo"
+    ]
+  },
+  "growth": {
+    "label": "03 · gukura",
+    "title": "Uko nageze hano.",
+    "subtitle": "Ntabwo aki ikarita y'ibikorwa. Ni urugendo. Buri kintu cyose ni umwanya nyakuri — ikintu cyubatswe, ikintu cyamenetse, ikintu cyumvikanye."
+  },
+  "projects": {
+    "label": "05 · ibyo nubatse",
+    "title": "Ibibazo nyabyo.",
+    "titleAccent": "Sisitemu nyabyo. Kode nyayo.",
+    "primary": [
+      {
+        "name": "Uptime",
+        "tagline": "Website monitoring that actually works. Multi-region. Multi-tenant. Fully monetized.",
+        "desc": "I am building a monitoring platform from scratch.\n\nThe idea is simple: your website goes down at 3am, your team knows within seconds — not when a customer complains.\n\nThe hard part is not the monitoring itself. The hard part is not raising false alarms. If one region sees a failure but three others don't, that is not an outage. That is a network hiccup. Multi-region consensus is what separates real monitoring from noise.\n\nEvery company on the platform gets a public status page — the kind Stripe and GitHub have. Except I built mine from scratch, at Rwanda Coding Academy, in Year 2.\n\nIt has subscription billing. It is multi-tenant. It is the most serious thing I have ever built. I do not know if it will succeed. But I know it is real.",
+        "tech": ["TypeScript", "Node.js", "PostgreSQL", "React", "Vercel"],
+        "arch": "→ monitoring workers   poll endpoints every 30–60s\n→ multi-region nodes   consensus required for outage\n→ alert dispatcher     Slack · Email · PagerDuty\n→ status page engine   public · live · 90-day history\n→ billing layer        subscription plans · multi-tenant\n→ tenant isolation     each company fully separated",
+        "category": "SaaS · monitoring · infrastructure",
+        "status": "in progress",
+        "closingUptime": "This is not finished. But it is the most real thing I have ever built. I am a Year 2 student at Rwanda Coding Academy. I started this because I needed it to exist. That is usually a good enough reason."
+      },
+      { "name": "MediSafe", "tagline": "Helping patients manage medications safely with AI.", "desc": "Built for people living with chronic illness who struggle to track prescriptions and side effects every day. Healthcare software should feel like care, not complexity.", "tech": ["TypeScript", "AI/NLP", "React"], "arch": "AI-powered · medication validation · natural language input", "evolution": "MediSafe v1 → current: how it started, how it's going" },
+      { "name": "Academix", "tagline": "A full microservices school management system.", "desc": "Designed to bring efficiency to academic institutions. Students, records, workflows — all connected. Built to actually work at scale, not just in demos.", "tech": ["TypeScript", "Microservices", "REST APIs"], "arch": "Distributed services · bounded contexts · event-driven" },
+      { "name": "furnit", "tagline": "A furniture web experience built with care.", "desc": "A frontend project where I focused purely on UI craft — clean design, smooth interactions, product feel.", "tech": ["JavaScript", "CSS", "React"] }
+    ],
+    "secondary": [
+      { "name": "Automailio", "desc": "An email automation platform — campaigns, templates, scheduling, delivery logs. Built with Java Spring Boot on the backend and React on the frontend. Containerized with Docker. This one taught me that building for reliability is a completely different challenge than building for functionality.", "tech": ["Java", "Spring Boot", "TypeScript", "PostgreSQL", "Docker"], "category": "automation · full-stack", "status": "in progress", "github": "https://github.com/Mugisha-Ivan-Bright/automailio" },
+      { "name": "Enrollia", "desc": "An enrollment management dashboard built with Refine and Supabase. Handles data, access control, and admin workflows. The SQL schema is the part I'm most proud of — getting the data model right before writing a single line of React.", "tech": ["TypeScript", "React", "Supabase", "PostgreSQL", "SQL"], "category": "dashboard · admin panel", "status": "shipped", "github": "https://github.com/Mugisha-Ivan-Bright/enrollia", "live": "https://enrollia.vercel.app" },
+      { "name": "RFID System", "desc": "An RFID-based web system — hardware meets software. I built the web layer that connects to physical RFID readers. This came from a real problem we worked on at school. It's not perfect, but it's real, and it works. I also wrote C++ for Bluetooth communication and servo control — because I was curious, and curiosity doesn't wait for a syllabus.", "tech": ["HTML", "CSS", "JavaScript", "C++", "Embedded Systems"], "category": "hardware + software", "status": "shipped", "github": "https://github.com/Mugisha-Ivan-Bright/RFID", "live": "https://rfidembedded.vercel.app" },
+      { "name": "MARKET-TRUTH", "desc": "A market information tool built in TypeScript. Someone forked it. That was the first time I realized something I built was useful to a stranger. It was a small moment, but it meant something.", "tech": ["TypeScript", "React", "Vercel"], "category": "data · market", "status": "shipped", "github": "https://github.com/Mugisha-Ivan-Bright/MARKET-TRUTH", "live": "https://market-truth.vercel.app" },
+      { "name": "Lumen", "desc": "Lumen — a full-stack TypeScript product with a separate frontend and backend. This is the most starred project on this account. I don't know exactly why people liked it, but I know I built it carefully. Both repos. Both mine.", "tech": ["TypeScript", "Node.js", "React", "Vercel"], "category": "full-stack", "status": "shipped", "github": "https://github.com/Mugisha-Ivan-Bright/lumen-frontend", "live": "https://lumen-frontend-gamma.vercel.app" },
+      { "name": "Igihango Digital", "desc": "Igihango — a digital contract/agreement platform. 'Igihango' is Kinyarwanda for covenant or agreement. I built this for a Rwandan context because I believe software should solve problems where people actually are. JavaScript frontend, Python backend. Two repos, one idea.", "tech": ["JavaScript", "Python", "REST API"], "category": "civic · Rwanda-first", "status": "shipped", "github": "https://github.com/Mugisha-Ivan-Bright/igihango-digital" },
+      { "name": "Adheronix Demo", "desc": "Adheronix — a product demo built in TypeScript and deployed live. I built this to present something real. It is one of the larger things I've shipped. Not everything I build is for myself.", "tech": ["TypeScript", "React", "Vercel"], "category": "product demo", "status": "shipped", "github": "https://github.com/Mugisha-Ivan-Bright/adheronix-demo-presentation", "live": "https://adheronix-demo-presentation.vercel.app" },
+      { "name": "AI Resume Analyzer", "desc": "An AI tool that reads and analyzes resumes. I built this recently. It's not finished. But I believe in shipping things before they're perfect and learning from what breaks.", "tech": ["JavaScript", "AI", "OpenAI API"], "category": "AI tools", "status": "in progress", "github": "https://github.com/Mugisha-Ivan-Bright/ai-resume-analyzer" }
+    ],
+    "closingNote": "These are some of what I've built.\nThere are 41 repositories across two GitHub accounts.\nSome are unfinished. Some are experiments.\nSome are things I'm not ready to talk about yet.\nBut every single one taught me something.\nThat's why I keep building."
+  },
+  "mytime": {
+    "label": "06 · igihe cyanjye",
+    "title": "IGIHE CYANJYE",
+    "subtitle": "Ntabwo ari inzozi. Ni ibintu byagenwe. Buri segonda ihindura ubushobozi mu bikorwa.",
+    "closing": "Kubara igihe ntabwo ari ukugera ku ntsinzi. Ni ukubera uwo nzaba."
+  },
+  "skills": {
+    "label": "07 · ibikoresho nkoresha",
+    "categories": [
+      { "name": "Indimi", "items": "TypeScript · JavaScript · Python · Java · C++" },
+      { "name": "Frontend", "items": "React · Next.js · Vite · Tailwind CSS" },
+      { "name": "Backend", "items": "Node.js · NestJS · Fastify · Spring Boot · REST APIs · Microservices · Docker · CI/CD" },
+      { "name": "AI/ML", "items": "Gushyiraho NLP · Igishushanyo cy'ibicuruzwa bishinzwe na AI" },
+      { "name": "Ububiko", "items": "Sisitemu zikoreshwa mu buryo butandukanye · Imipaka ya serivisi · Igishushanyo cya API" },
+      { "name": "Ibikoresho", "items": "Git · GitHub · Vercel · VS Code · OpenCode" },
+      { "name": "Imiyoborere", "items": "TCP/IP · DNS · HTTP/HTTPS · Routing & switching · Subnetting · Umutekiro wa router · Firewalls · VLANs · Gukosora network" },
+      { "name": "Ubuhanga bw'Abantu", "items": "Ubuyobozi bw'ishyanga · Kuvuga imbere y'abantu (nabonye, ntabwo nahawe) · Kwizera & kwihangana · Ukuri · Gukora ntawe ubona" }
+    ]
+  },
+  "community": {
+    "label": "08 · hakurya ya code",
+    "title": "Umuhanga wandika kode gusa",
+    "titleAccent": "ni gice cy'umuhanga.",
+    "role": "Ubuyobozi bw'Ishyanga",
+    "school": "Rwanda Coding Academy",
+    "description": "Nizera ko RCA ifite inshingano ku baturage bayikikije, atari abanyeshuri bayo gusa. Nateganya gusanga abantu. Nshyira hamwe. Nirwanira abantu batugufi. Ntabwo mbikora kugira ngo mbone ibyishimo. Ndabikora kuko bihari.",
+    "quoteLine1": "$ mugisha --ibyo nizera",
+    "quoteLine2": "> \"Ibyo ntekereje mbikora abantu bandeba cyangwa batandeba.\"",
+    "quoteLine3": "(Ibyo nkora, ndabikora abantu bareba cyangwa batareba.)",
+    "tag": "Ntabwo ari kuri CV. Ni ukuri."
+  },
+  "whyIBuild": {
+    "label": "09 · impamvu",
+    "title": "Impamvu Nubaka",
+    "line1": "Kubera nzi uko bimera kukura udafite ubushobozi.",
+    "line2": "Kubera nzi uko bimeze kwicara mu cyumba ukibaza niba ukenewe.",
+    "line3": "Kubera nabonye tekinoloji ihindura ubuzima bwanjye burundu — nk'umwana utuje i Gatsibo utarigeza akora kuri PC, noneho ubaka sisitemu zikoresha AI ndetse n'iyobora abantu.",
+    "line4": "Ibyo byamaze kubaho kuri njye.",
+    "line5": "Noneho ndashaka kubaka ibintu bizafasha bibabereho ku bandi."
+  },
+  "failures": {
+    "label": "10 · ibintu byahinduye ubuzima bwanjye",
+    "title": "Ibyotsi ni amakuru.",
+    "titleAccent": "Dore ibyanjye.",
+    "cards": [
+      { "label": "igishusho 01", "title": "Ubwa mbere inyigisho zitari zihagije.", "body": "Natekereje ko nsobanukiwe Node.js kuko nashoboraga gukurikira. Hanyuma ngerageje kubaka ikintu nyacyo kandi nta kintu cyakoraga nk'uko inyigisho yavugaga. Uwo munsi numvise: kumenya gukoporera ntabwo ari ukumenya kubaka." },
+      { "label": "igishusho 02", "title": "Umushinga nagiye nongera uvuye inyuma.", "body": "Nubatse backend yakoraga kuri mashini yanjye gusa ahandi hatari. Ibitekerezo bitari byo, ububiko butari bwo, uburyo butari bwo. Gutangira ubushya birababaza. Ariko bigusha umubano kuruta ikindi kintu cyose. Ntabwo nkibwa gutangira ubushya." },
+      { "label": "igishusho 03", "title": "Igihe numvaga icyizere gitsimbwa, ntabwo gitangwa.", "body": "Sinigeze nizera ko mbere ndi mu mwanya mu bintu nk'ibi. Nari nceceye kuko nari mfite ubwoba. Atari uko nta cyo nari mfite cyo kuvuga. Umwaka wa 2 yanyigishije: icyizere ntabwo ari imiterere y'umuntu. Ni umwuga. Ndifuza buri munsi." }
+    ]
+  },
+  "obsession": {
+    "label": "11 · ibyo nirukanka none",
+    "exploringPrompt": "$ gushakisha --igikorwa",
+    "exploringItems": ["→ gukurikirana mu turere twinshi rutandukanye", "→ ububiko bwa SaaS billing (Stripe)", "→ gutandukanya abakoresha ku kigero kinini", "→ ibikorwa remezo by'urupapuro rwa status", "→ ibikoresho by'ubuzima bishinzwe na AI", "→ sisitemu zo hasi (kwiga C)", "→ uko tekinoloji igabanya ubusumbane"],
+    "thoughtsPrompt": "$ ibitekerezo --saa munani z'ijoro",
+    "thoughtsItems": ["> kiki gituma sisitemu nyinshi zitsindwa mu kugera ku kigero kinini?", "> ni iki gituma porogaramu ikora neza?", "> tekinoloji irashobora kugabanya ubusumbane mu Rwanda?", "> kwitonda bishobora kugera kure uko?", "> ni ubuhe buhanga ndusha nkaba?", "> isi ikeneye abubaka cyangwa abatekereza?"]
+  },
+  "becoming": {
+    "label": "12 · inzira",
+    "title": "Umuhanga",
+    "titleAccent": "mba.",
+    "statusLabels": {
+      "shipped": "Byarangiye",
+      "in progress": "Birakorwa",
+      "dreaming": "Nrosa"
+    },
+    "paragraphs": [
+      "Ntabwo ngerageza kuba inshingano y'akazi.",
+      "Ndashaka kubaka sisitemu zifite agaciro mu buzima n'uburezi — ingengo ebyiri aho porogaramu zishobora guhindura ubuzima bukabije.",
+      "Ndashaka gusobanukirwa n'ibikorwa remezo bihagije kugira ngo nubake ibintu bishobora kwaguka hakurya y'ibyo nshobora gutekereza.",
+      "Ndashaka gukora ubushakashatsi — muri MIT cyangwa Stanford — ku buryo sisitemu zikoreshwa mu buryo butandukanye na AI zishobora gukorera hamwe mu bidukikije bifite ibikoresho bike n'ibyo bisabwa byinshi nk'ibyo nkuriye."
+    ],
+    "closing": "Ndi umuhanga w'ikoranabuhanga ukora n'ishyanga. Uwo ni we muhanga mba.",
+    "phases": [
+      { "label": "Igihe 1 · Ubu", "desc": "RCA Umwaka wa 2 · Gutanga sisitemu nyayo", "status": "shipped" },
+      { "label": "Igihe 2 · 2026", "desc": "Gukora ubuhanga bw'ikoranabuhanga igice cy'igihe", "status": "in progress" },
+      { "label": "Igihe 3 · 2027", "desc": "Gusaba kaminuza (MIT / Stanford)", "status": "dreaming" },
+      { "label": "Igihe 4 · Hejuru", "desc": "Ubushakashatsi + kubaka Afurika", "status": "dreaming" }
+    ]
+  },
+  "beliefs": {
+    "label": "13 · indangagaciro",
+    "title": "Ibyo Nizera",
+    "cards": [
+      { "title": "Kwizera", "body": "Yesu Kristo ni shingiro ry'ibyo nubatse n'ibyo ndi. Atari imikorere. Atari ikirango. Ukuri." },
+      { "title": "Ukuri", "body": "Iyi portfolio irimo ibyo nakoze gusa. Ntabwo nshaka kukwereka byinshi ndabeshyi. Nkunda kukwereka bike nkaba mpamo." },
+      { "title": "Gukora", "body": "Naje mu bukene: nta PC, nta cyongereza, nta shuri. Ibyo nari mfite ni imbaraga n'isengesho. Byari bihagije kugira ngo binyane hano. Bizahagije kugira ngo bijye impagana." },
+      { "title": "Abantu", "body": "Code ni igikoresho. Intego ni abantu. Nubaka porogaramu nk'uko nyobora ishyanga: atari kugira ngo mbone ibyishimo, ahubwo kubera ingaruka." }
+    ]
+  },
+  "contact": {
+    "label": "14 · twhuze",
+    "title": "Niba ubaka ikintu gifite umumaro, kigoye, cyangwa gishingiye ku muntu — ndashimishwa no kubyumva.",
+    "terminalHeading": "$ mugisha --twandikire",
+    "fieldLabels": { "email": "imeyili", "phone": "telefoni", "location": "ahantu", "github": "github", "school": "ishuri", "openTo": "ndi bukumbure" },
+    "alertMessage": "Ikintu cyagenze nabi. Nyamuneka ndangiza imeyili kuri mugishaivanbright250@gmail.com",
+    "sponsorText": "Ndi gushaka umufatanyabikorwa wizera aho nerekeje. Niba usomye kugeza hano ugahita ushaka ikintu — wandikira. Ntabwo nzapfusha ubushobozi bwawe.",
+    "namePlaceholder": "Izina ryawe",
+    "emailPlaceholder": "Imeyili yawe",
+    "messagePlaceholder": "Ubutumwa bwawe",
+    "send": "Ohereza →",
+    "sending": "Ikohereza...",
+    "sent": "Yoherejwe ✓"
+  },
+  "footer": {
+    "copyright": "MIB · Mugisha Ivan Bright · © 2026",
+    "builtWith": "Yubatswe n'ukwizera, kode, n'amasenga menshi kubara.",
+    "location": "Rwanda Coding Academy · Gatsibo · Eastern Province · Rwanda 🇷🇼",
+    "navigate": "Kugendera",
+    "more": "Ibindi",
+    "code": "Code",
+    "reach": "Twandikire",
+    "links": {
+      "story": "Inkuru",
+      "projects": "Imirimo",
+      "skills": "Ubuhanga",
+      "community": "Ishyanga",
+      "whyIBuild": "Impamvu Nubaka",
+      "beliefs": "Indangagaciro",
+      "contact": "Twandikire",
+      "hireMe": "Ndakore",
+      "github1": "GitHub @Mugisha-Ivan-Bright",
+      "github2": "GitHub @codewithmugisha",
+      "email": "mugishaivanbright250@gmail.com",
+      "phone": "+250 735 024 932"
+    }
+  }
+}
