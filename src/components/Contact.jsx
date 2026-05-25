@@ -9,6 +9,8 @@ export default function Contact() {
   const { t } = useI18n()
   const formRef = useRef()
   const sectionRef = useRef()
+  const terminalRef = useRef()
+  const formWrapRef = useRef()
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
   const [error, setError] = useState(false)
@@ -17,18 +19,15 @@ export default function Contact() {
     gsap.registerPlugin(ScrollTrigger)
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (prefersReduced) return
-
-    gsap.from(sectionRef.current,
-      {
-        y: 15,
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 85%',
-          once: true,
-        },
-      }
-    )
+    const el = sectionRef.current
+    if (!el) return
+    const ctx = gsap.context(() => {
+      gsap.from(el.querySelector('.contact-label'), { y: 20, opacity: 0, duration: 0.8, scrollTrigger: { trigger: el, start: 'top 80%', once: true } })
+      gsap.from(el.querySelector('.contact-title'), { y: 20, opacity: 0, duration: 0.8, delay: 0.15, scrollTrigger: { trigger: el, start: 'top 80%', once: true } })
+      gsap.from(terminalRef.current, { y: 15, opacity: 0, duration: 0.6, delay: 0.3, scrollTrigger: { trigger: el, start: 'top 80%', once: true } })
+      gsap.from(formWrapRef.current, { y: 15, opacity: 0, duration: 0.6, delay: 0.45, scrollTrigger: { trigger: el, start: 'top 80%', once: true } })
+    }, el)
+    return () => ctx.revert()
   }, [t])
 
   const handleSubmit = async (e) => {
@@ -60,15 +59,15 @@ export default function Contact() {
   return (
     <section id="contact" ref={sectionRef} className="bg-[#0a0a0a] py-32 border-t border-[#1a1a1a]">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-4 font-mono text-[11px] tracking-widest text-[#444]">
+        <div className="contact-label mb-4 font-mono text-[11px] tracking-widest text-[#444]">
           {t?.contact?.label}
         </div>
-        <h2 className="font-mono text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl max-w-3xl">
+        <h2 className="contact-title font-mono text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl max-w-3xl">
           {t?.contact?.title}
         </h2>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-2">
-          <div className="terminal">
+          <div ref={terminalRef} className="terminal">
             <div className="terminal-header">
               <span className="terminal-dot" />
               <span className="terminal-dot" />
@@ -96,7 +95,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div>
+          <div ref={formWrapRef}>
             {sent ? (
               <div className="flex flex-col items-center justify-center py-16 text-center">
                 <CheckCircle size={48} className="text-[#00FF87] mb-4" />

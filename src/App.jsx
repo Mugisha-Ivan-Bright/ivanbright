@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
 import { useScrollTrigger } from './hooks/useScrollTrigger.js'
 import { useCursor } from './hooks/useCursor.js'
 import { I18nProvider, useI18n } from './i18n/I18nContext.jsx'
+
+gsap.registerPlugin(ScrollTrigger)
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
 import Story from './components/Story.jsx'
@@ -68,11 +70,12 @@ export default function App() {
   const [loaded, setLoaded] = useState(false)
   const [commentOpen, setCommentOpen] = useState(false)
   const { dotRef, ringRef } = useCursor()
+  const location = useLocation()
   useScrollTrigger()
 
   useEffect(() => {
     if (!loaded) return
-    gsap.registerPlugin(ScrollTrigger)
+    if (location.pathname !== '/') return
 
     const lenis = new Lenis({
       duration: 1.4,
@@ -87,12 +90,14 @@ export default function App() {
     gsap.ticker.lagSmoothing(0)
 
     ScrollTrigger.refresh()
+    const refreshTimer = setTimeout(() => ScrollTrigger.refresh(), 200)
 
     return () => {
+      clearTimeout(refreshTimer)
       lenis.destroy()
       gsap.ticker.remove(raf)
     }
-  }, [loaded])
+  }, [loaded, location.pathname])
 
   const prefersReduced = typeof window !== 'undefined'
     ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -121,10 +126,7 @@ export default function App() {
               </>
             )}
 
-            <div
-              className="cursor-none"
-              style={{ display: loaded ? 'block' : 'none' }}
-            >
+            <div className="cursor-none">
               <GrainOverlay />
 
               <Nav />

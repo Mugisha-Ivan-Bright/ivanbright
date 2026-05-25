@@ -11,7 +11,10 @@ const statusPillClass = {
 
 export default function Becoming() {
   const { t } = useI18n()
-  const ref = useRef(null)
+  const sectionRef = useRef(null)
+  const labelRef = useRef(null)
+  const titleRef = useRef(null)
+  const textRef = useRef(null)
   const pillsRef = useRef([])
 
   const paragraphs = t?.becoming?.paragraphs
@@ -23,33 +26,15 @@ export default function Becoming() {
     gsap.registerPlugin(ScrollTrigger)
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (prefersReduced) return
-
-    gsap.from(ref.current,
-      {
-        y: 15,
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: ref.current,
-          start: 'top 85%',
-          once: true,
-        },
-      }
-    )
-
-    pillsRef.current.forEach((pill, i) => {
-      gsap.from(pill,
-        {
-          x: -15,
-          duration: 0.5,
-          delay: i * 0.12,
-          scrollTrigger: {
-            trigger: pill,
-            start: 'top 90%',
-            once: true,
-          },
-        }
-      )
-    })
+    const el = sectionRef.current
+    if (!el) return
+    const ctx = gsap.context(() => {
+      gsap.from(labelRef.current, { y: 20, opacity: 0, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 80%', once: true } })
+      gsap.from(titleRef.current, { y: 20, opacity: 0, duration: 0.8, delay: 0.15, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 80%', once: true } })
+      gsap.from(textRef.current?.querySelectorAll('.become-text'), { y: 15, opacity: 0, duration: 0.7, stagger: 0.08, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 75%', once: true } })
+      gsap.from(pillsRef.current.filter(Boolean), { x: -15, opacity: 0, duration: 0.5, stagger: 0.08, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 75%', once: true } })
+    }, el)
+    return () => ctx.revert()
   }, [])
 
   const statusIcon = (s) => {
@@ -59,24 +44,24 @@ export default function Becoming() {
   }
 
   return (
-    <section className="bg-[#0a0a0a] py-32 border-t border-[#1a1a1a]">
+    <section ref={sectionRef} className="bg-[#0a0a0a] py-32 border-t border-[#1a1a1a]">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-4 font-mono text-[11px] tracking-widest text-[#444]">
+        <div ref={labelRef} className="mb-4 font-mono text-[11px] tracking-widest text-[#444]">
           {t?.becoming?.label}
         </div>
-        <h2 className="font-mono text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
+        <h2 ref={titleRef} className="font-mono text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
           {t?.becoming?.title}
           <br />
           <span className="text-accent">{t?.becoming?.titleAccent}</span>
         </h2>
 
-        <div ref={ref} className="mt-16 max-w-3xl">
+        <div ref={textRef} className="mt-16 max-w-3xl">
           {paragraphs.map((p, i) => (
-            <p key={i} className="font-mono text-sm leading-relaxed text-[#888] mt-6 first:mt-0">
+            <p key={i} className="become-text font-mono text-sm leading-relaxed text-[#888] mt-6 first:mt-0">
               {p}
             </p>
           ))}
-          <p className="mt-8 font-mono text-base font-semibold leading-relaxed text-accent">
+          <p className="become-text mt-8 font-mono text-base font-semibold leading-relaxed text-accent">
             {closing}
           </p>
         </div>
