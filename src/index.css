@@ -405,6 +405,22 @@ body {
   to   { transform: translateX(-50%); }
 }
 
+/* ── Terminal nav button ── */
+.terminal-nav-btn {
+  background: transparent;
+  border: 1px solid #222222;
+  color: #444444;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.terminal-nav-btn:hover {
+  color: #4ade80;
+  border-color: #4ade80;
+}
+
 /* ── Nav ── */
 .nav-status-dot {
   width: 6px;

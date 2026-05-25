@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import { Languages } from 'lucide-react'
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ onClose }) {
   const { lang, setLang, languages } = useI18n()
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
@@ -33,7 +33,11 @@ export default function LanguageSwitcher() {
           {languages.map((l) => (
             <button
               key={l.code}
-              onClick={() => { setLang(l.code); setOpen(false) }}
+              onClick={() => {
+                setLang(l.code)
+                setOpen(false)
+                onClose?.()
+              }}
               className={`w-full rounded px-3 py-1.5 text-left font-mono text-xs transition-colors ${
                 lang === l.code
                   ? 'bg-accent/10 text-accent'

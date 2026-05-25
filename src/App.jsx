@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
@@ -23,6 +24,7 @@ import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import FeedbackOverlay from './components/FeedbackOverlay.jsx'
 import CommentModal from './components/CommentModal.jsx'
+import Terminal from './pages/Terminal.jsx'
 
 function GrainOverlay() {
   return (
@@ -97,52 +99,57 @@ export default function App() {
     : false
 
   return (
-    <>
-      <I18nProvider>
-        {!loaded && <LoadingScreen onComplete={() => setLoaded(true)} />}
+    <Routes>
+      <Route path="/terminal" element={<Terminal />} />
+      <Route path="/" element={
+        <>
+          <I18nProvider>
+            {!loaded && <LoadingScreen onComplete={() => setLoaded(true)} />}
 
-        {!prefersReduced && (
-          <>
+            {!prefersReduced && (
+              <>
+                <div
+                  ref={dotRef}
+                  className="pointer-events-none fixed z-[9999] h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent hidden md:block"
+                  style={{ top: 0, left: 0 }}
+                />
+                <div
+                  ref={ringRef}
+                  className="pointer-events-none fixed z-[9999] h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/60 hidden md:block"
+                  style={{ top: 0, left: 0 }}
+                />
+              </>
+            )}
+
             <div
-              ref={dotRef}
-              className="pointer-events-none fixed z-[9999] h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent hidden md:block"
-              style={{ top: 0, left: 0 }}
-            />
-            <div
-              ref={ringRef}
-              className="pointer-events-none fixed z-[9999] h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/60 hidden md:block"
-              style={{ top: 0, left: 0 }}
-            />
-          </>
-        )}
+              className="cursor-none"
+              style={{ display: loaded ? 'block' : 'none' }}
+            >
+              <GrainOverlay />
 
-        <div
-          className="cursor-none"
-          style={{ display: loaded ? 'block' : 'none' }}
-        >
-          <GrainOverlay />
+              <Nav />
+              <Hero />
+              <Story />
+              <EngineeringDepth />
+              <GrowthGraph />
+              <Projects />
+              <MyTime />
+              <Skills />
+              <Community />
+              <WhyIBuild />
+              <Failures />
+              <Obsession />
+              <Becoming />
+              <Beliefs />
+              <Contact />
+              <Footer onOpenComment={() => setCommentOpen(true)} />
+            </div>
 
-          <Nav />
-          <Hero />
-          <Story />
-          <EngineeringDepth />
-          <GrowthGraph />
-          <Projects />
-          <MyTime />
-          <Skills />
-          <Community />
-          <WhyIBuild />
-          <Failures />
-          <Obsession />
-          <Becoming />
-          <Beliefs />
-          <Contact />
-          <Footer onOpenComment={() => setCommentOpen(true)} />
-        </div>
-
-        <FeedbackOverlay onOpenComment={() => setCommentOpen(true)} />
-        <CommentModal open={commentOpen} onClose={() => setCommentOpen(false)} />
-      </I18nProvider>
-    </>
+            <FeedbackOverlay onOpenComment={() => setCommentOpen(true)} />
+            <CommentModal open={commentOpen} onClose={() => setCommentOpen(false)} />
+          </I18nProvider>
+        </>
+      } />
+    </Routes>
   )
 }

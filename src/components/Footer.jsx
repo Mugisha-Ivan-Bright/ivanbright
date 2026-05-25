@@ -1,5 +1,6 @@
 import { Mail, Phone, MessageSquare } from 'lucide-react'
 import { useI18n } from '../i18n/I18nContext.jsx'
+import { openTerminal } from '../utils/openTerminal.js'
 
 const columns = [
   {
@@ -93,6 +94,10 @@ export default function Footer({ onOpenComment }) {
 
         <div className="mt-6 text-center font-mono text-[11px] tracking-wider text-[#444]">
           {t?.footer?.location}
+        </div>
+
+        <div className="mt-4 text-center font-mono text-[11px] tracking-wider text-[#444]">
+          developers: <button onClick={openTerminal} className="text-[#555] no-underline transition-colors hover:text-accent link-underline" style={{background:'transparent',border:'none',cursor:'pointer',fontFamily:'inherit',fontSize:'inherit',padding:0}}>try /terminal</button>
         </div>
       </div>
     </footer>

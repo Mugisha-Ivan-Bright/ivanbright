@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Menu, X } from 'lucide-react'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import LanguageSwitcher from './LanguageSwitcher.jsx'
+import { openTerminal } from '../utils/openTerminal.js'
 
 const links = [
   { key: 'story', href: '#story' },
@@ -59,6 +60,12 @@ export default function Nav() {
           </a>
         ))}
         <LanguageSwitcher />
+        <button
+          onClick={openTerminal}
+          className="terminal-nav-btn"
+        >
+          [~/&#36;]
+        </button>
         <div className="flex items-center gap-1.5 font-mono text-[11px] tracking-wide text-[#888]">
           <span className="nav-status-dot" />
           {t?.nav?.openToWork}
@@ -72,24 +79,24 @@ export default function Nav() {
         {open ? <X size={24} /> : <Menu size={24} />}
       </button>
 
-      {open && (
-        <div className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-[#0a0a0a]/95 backdrop-blur-xl md:hidden">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="link-underline font-mono text-lg uppercase tracking-widest text-white no-underline"
-            >
-              {t?.nav?.[l.key]}
-            </a>
-          ))}
-          <div className="mt-2"><LanguageSwitcher /></div>
-          <a href="#contact" onClick={() => setOpen(false)} className="btn-accent text-[11px] py-2 px-4">
-            {t?.nav?.hireMe}
-          </a>
-        </div>
-      )}
+       {open && (
+         <div className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-[#0a0a0a] backdrop-blur-sm md:hidden animate-fadeIn">
+           {links.map((l) => (
+             <a
+               key={l.href}
+               href={l.href}
+               onClick={() => setOpen(false)}
+               className="link-underline font-mono text-lg uppercase tracking-widest text-[#eee] no-underline hover:text-white transition-colors duration-200"
+             >
+               {t?.nav?.[l.key]}
+             </a>
+           ))}
+           <div className="mt-2"><LanguageSwitcher onClose={() => setOpen(false)} /></div>
+           <a href="#contact" onClick={() => setOpen(false)} className="btn-accent text-[11px] py-2 px-4">
+             {t?.nav?.hireMe}
+           </a>
+         </div>
+       )}
     </nav>
   )
 }
