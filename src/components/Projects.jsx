@@ -99,7 +99,7 @@ function ProductCard({ item }) {
                 </div>
                 {p.name !== 'Uptime' && (
                   <a
-                    href={`https://github.com/codewithmugisha/${p.name}`}
+                    href={`https://github.com/Mugisha-Ivan-Bright/uptime-api`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#555] transition-colors hover:text-accent"
